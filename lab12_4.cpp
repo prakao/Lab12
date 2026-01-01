@@ -2,6 +2,9 @@
 
 using namespace std;
 
+template<typename hord>
+void mySwap(hord &x,hord &y);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -29,4 +32,13 @@ int main(){
 
 	return 0;
 }
+
+template<typename hord>
+void mySwap(hord &x,hord &y){
+	hord z =x;
+	x=y;
+	y=z;
+	
+}
+
 
